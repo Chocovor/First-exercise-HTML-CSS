@@ -1,0 +1,47 @@
+/* Suppression des marges et des bords pour html*/
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*repaires de construction à effacer ultèrieurement*/
+header{
+    background-color: gold;
+}
+main{
+    background-color: greenyellow ;
+}
+footer{
+    background-color: green;
+}
+/*fin des repaires et début du code CSS du site*/
+
+/*Preparer tout le generique au depart exemple hyperliens ou boutons*/
+
+/*Ne pas oublier de faire un header qui reste afficher en haut de page*/
+
+/*START HEADER*/
+header{
+    display: flex;
+}
+/*END HEADER*/
+/*START MAIN*/
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 30vh 30vh 30vh
+}
+.box5{
+    position: fixed;
+}
+    
+/*END MAIN*/
+/*START FOOTER*/
+/*END FOOTER*/
+
+/*MEDIA QUERY PART*/
