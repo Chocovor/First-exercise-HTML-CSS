@@ -1,0 +1,166 @@
+/* Suppression des marges et des bords pour html*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    background-color:     rgb(216, 11, 206);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.presentation{
+    display: flex;
+    background-color: black;
+    color: white;
+    max-width: 100%;
+}
+.presentation img{
+ height: auto;
+}
+.presentation p{
+    margin: 5%;
+    border: solid rgb(216, 11, 206);
+    max-width: 50%;
+    text-align: justify;
+}
+main button{
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(216, 11, 206);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,12,179,0.8475723052893032) 59%, rgba(0,212,255,1) 100%);
+    color: white;
+    margin-top: 20vh;
+}
+/*START HEADER*/
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 15vh;
+    top: -10%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(216,11,206,1) 59%);
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.menuDesktop{
+    list-style: none;
+    color: white;
+    display: flex;
+    font-size: 200%; 
+}
+.menuDesktop a{
+    display: flex;
+    margin-left: 30px;
+}
+.logo{
+    opacity: 0.7;
+    height: 100%;
+}
+/*START MENU BURGER*/
+.menuBurger{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(216,11,206,1) 59%);
+    /*display: none;*/
+}
+
+#iconBurger{
+    position: absolute;
+    cursor:pointer;
+    left: 5%;
+    top: 12.5%;
+    /*transition: all .4s ease-in-out;*/
+}
+#burger{
+   display: none;
+}
+#iconBurger img{
+    height: 90px;
+}
+.navigation{
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+.navigation a{
+    display: none;
+}
+#burger:checked ~ .navigation a{
+    display: block;
+}
+/*END HEADER*/
+/*MEDIA QUERY PART HEADER*/
+@media screen  and (max-width:800px){
+    header{
+        flex-direction: row-reverse;
+    }
+    .menuDesktop{
+        display: none;
+    }
+    h1{
+        font-size: 150%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #iconBurger{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media screen and (min-width:801px){
+    .container{
+        grid-template-rows: 50vh 50vh 50vh 50vh 50vh;
+    }
+    .menuBurger{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    h1{
+        font-size: 70%;
+        padding-top: 30%;
+    }
+}
+/*START FOOTER*/
+
+.social a img{
+    max-height: 40px;
+}
+.social a img:hover{
+    transform: scale(1.2);
+}
+footer{
+    background-color: black;
+    position: relative;
+
+}
+
+
+
+/*END FOOTER*/

@@ -4,125 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet">
-    <title>projet solo - site vitrine - vente de publicité</title>
+    <title>Influenceurs de talent</title>
 </head>
 <body>
     <header>
-        <div><img class="logo" src="" alt="logo de la marque"></div>
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
+        <div><a href="index.html"><img class="logo" src="IMAGE/logoInfluence.jpg" alt="logo de la marque"></a></div>
+        <nav class="menuDesktop">
+            <a id="history" href="https://fr.wikipedia.org/wiki/Influenceur_web">Histoire</a>
 <!--la page sur laquelle je ferais les flexbox-->           
-                <li class="roll"><a href="#influenceurs" title="">Influenceurs</a></li> 
-                <li><input type=""><label for="Services"></label></li>
+            <a href="../PROJETsolo/PAGE_HTML/influenceurs.html">Influenceurs</a>
+            <a href="../PROJETsolo/PAGE_HTML/pretations.html"><input type="checkbox" id="services"><label for="services"></label>Prestations</a>
 <!--page avec le formulaire en checkbox avec une appartition du produit quand il est coché-->                
-                <li>Reservations</li> 
-
-            </ul>
+            <a href="../PROJETsolo/PAGE_HTML/reservation.html">Reservations</a>
         </nav>
-        <div class="menuBurger">
-            <!--le logo doit passer au centre et le menu burger à gauche-->
-            <input type="checkbox" id="burger">
-            <label id="iconBurger"for="burger">
-             <img src="IMAGE/menu-burger.png" 
-             alt="icon menu burger">
-            </label>
-        </div>
-        <div class="social" id="socialUp">
-            <a href=""><img src="" alt="logo facebook"></a>
-            <a href=""><img src="" alt="logo linkedin"></a>
-            <a href=""><img src="" alt="logo mail"></a>
-        </div>
+        <nav class="menuBurger">
+            <input type="checkbox" id="burger"><label id="iconBurger" for="burger"><img src="IMAGE/menu-burger.png" alt="icon menu burger"></label>
+            <div class="navigation">              
+                    <a href="https://fr.wikipedia.org/wiki/Influenceur_web">Histoire</a>
+                    <a href="../PROJETsolo/PAGE_HTML/influenceurs.html">Influenceurs</a>
+                    <a href="../PROJETsolo/PAGE_HTML/prestations.html">Prestations</a>
+                    <a href="../PROJETsolo/PAGE_HTML/reservation.html">Reservations</a>             
+            </div>    
+        </nav>
     </header>
     <main>
-        <section>
-            <!--grid pour effet visuel avec des photos façon puzzle-->
-            <div class="container">
-                <div class="window box1"><img src="" alt="">boite1</div>
-                <div class="window box2"><img src="" alt="">boite2</div>
-                <div class="window box3"><img src="" alt="">boite3</div>
-                <div class="window box4"><img src="" alt="">boite4</div>
-                <div class="window box5"><img src="" alt="">boite5</div>
-                <div class="window box6"><img src="" alt="">boite6</div>
-                <div class="window box7"><img src="" alt="">boite7</div>
-                <div class="window box8"><img src="" alt="">boite8</div>
-                <div class="window box9"><img src="" alt="">boite8</div>
+        <h1 id="ancre">INFLUENCEURS DE TALENT</h1>
+        <section class="carroussel">
+            <!--mettre en place un carroussel
+            Cf: https://codepen.io/t_afif/pen/wvjXXNW -->
+            <h2>Notre présence</h2>
+            <div class="gallery">
+                <img src="../PROJETsolo/IMAGE/STAFF/SANGOKU/goku-tokyo-2020.jpg" alt="présence au J.O.">
+                <img src="../PROJETsolo/IMAGE/STAFF/mangaanimegirlsazurlane.jpg" alt="accompagnement à un mariage">
+                <img src="../PROJETsolo/IMAGE/STAFF/lucyA.jpg" alt="">
+                <img src="IMAGE/STAFF/nouvelANchinois.jpg" alt="">
+                <img src="IMAGE/STAFF/mitsuri&tokito.jpg" alt="">
+                <img src="IMAGE/STAFF/natsu&lucy.jpg" alt="">
+                <img src="IMAGE/STAFF/taoCarroussel.jpg" alt="">
+                <img src="IMAGE/STAFF/artificeFire.jpg" alt="">
+            </div>
+    </section>           
+    <div class="thanks">
+        <span>❤</span><span>C</span><span>'</span><span>E</span><span>S</span><span>T</span>
+        <span>❤</span><span>T</span><span>O</span><span>U</span><span>J</span><span>O</span><span>U</span>
+        <span>R</span><span>S</span><span>❤</span><span>U</span>
+        <span>N</span><span>❤</span><span>P</span><span>L</span><span>A</span>
+        <span>I</span><span>S</span><span>I</span><span>R</span><span>❤</span>
+        <span>D</span><span>E</span><span>❤</span>
+        <span>V</span><span>O</span><span>U</span><span>S</span><span>❤</span>
+        <span>V</span><span>O</span><span>I</span><span>R</span>
+        <span>❤</span><span>I</span><span>C</span><span>I</span><span>❤</span>
+    </div>
+        <section>  
+            <!--grid-->
+            <div class="container"> 
+                <div class= "window box1"><h2>Vos STARS préférées</h2></div>            
+                <div class="window box2"></div>
+                <div class="window box3"></div>
+                <div class="window box4"></div>
+                <div class="window box5"></div>
+                <div class="window box6"></div>
+                <div class="window box7"></div>
+                <div class="window box8"></div>
+                <div class="window box9"></div>
+                <div class="window box10"></div>
+                <div class="window box11"></div>
+                <div class="window box12"></div>
+                <div class="window box13"></div>
+                <div class="window box14"></div>
+                <div class="window box15"></div>
+                <div class="window box16"></div>
+                <div class="window box17"></div>
             </div>
         </section>
-        <section>
-<!--mettre en place un carroussel
-Cf: https://codepen.io/t_afif/pen/wvjXXNW -->
-            <div class="carousel">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </section>
+
+        <div><button id="up"><a href="#ancre">Haut de page</a></button></div>
     </main>
     <footer>
-<!--première partie avec une animation de texte de remerciement
-Cf https://codepen.io/designfenix/pen/gOGVXWw-->
-        <div class="frame">
-            <div class="text">
-                <span>❤</span>
-                <span></span>
-                <span>E</span>
-                <span>V</span>
-                <span>O</span>
-                <span>L</span>
-                <span></span>
-                <span>H</span>
-                <span>T</span>
-                <span>I</span>
-                <span>W</span>
-                <span></span>
-                <span>E</span>
-                <span>D</span>
-                <span>A</span>
-                <span>M</span>
-                <span></span>
-                <span>❤</span>
-                <span></span>
-                <span>E</span>
-                <span>V</span>
-                <span>O</span>
-                <span>L</span>
-                <span></span>
-                <span>H</span>
-                <span>T</span>
-                <span>I</span>
-                <span>W</span>
-                <span></span>
-                <span>E</span>
-                <span>D</span>
-                <span>A</span>
-                <span>M</span>
-                <span></span>
-                <span>❤</span>
-                <span></span>
-                <span>E</span>
-                <span>V</span>
-                <span>O</span>
-                <span>L</span>
-                <span></span>
-                <span>H</span>
-                <span>T</span>
-                <span>I</span>
-                <span>W</span>
-                <span></span>
-                <span>E</span>
-                <span>D</span>
-                <span>A</span>
-                <span>M</span>        
-            </div>
-        </div>
-        <div class="social" id="socialDown">
-            <a href=""><img src="" alt="logo facebook"></a>
-            <a href=""><img src="" alt="logo linkedin"></a>
-            <a href=""><img src="" alt="logo mail"></a>
+        <div class="social">
+            <a href="https://facebook.com"><img src="IMAGE/Facebook_Logo_2023.png" alt="logo facebook"></a>
+            <a href="https://re.linkedin.com/in/mathias-monteil-69b47b168"><img src="IMAGE/logoLinkedin.png" alt="logo linkedin"></a>
+            <a href="PAGE_HTML/reservation.html"><img src="IMAGE/logoMail.jpg" alt="logo mail"></a>
+            <a href="https://www.instagram.com/"><img src="IMAGE/logoInstagram.jpg" alt="logo instagram"></a>
+            <a href="https://www.tiktok.com/fr/"><img src="IMAGE/tiktokLogo.jpg" alt="logo tiktok"></a>
+            <a href="https://twitter.com/?lang=fr"><img src="IMAGE/logoX.jpg" alt="logo X"></a>
+            <a href="https://www.youtube.com/shorts/twJ6uRLphC4"><img src="IMAGE/Youtube-logo.png" alt="logo youtube"></a>
+            <a href=""><img src="" alt=""></a>
+
         </div>
     </footer>
 </body>
